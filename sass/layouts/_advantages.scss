@@ -1,9 +1,18 @@
 .points-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   &__item {
-    flex-basis: calc((100% - 90px) / 4);
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      flex-basis: calc((100% - 90px) / 4);
+    }
   }
   &__card {
     display: flex;
@@ -11,7 +20,7 @@
     justify-content: center;
     margin-bottom: 30px;
     border-radius: 4px;
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: var(--background-light-color);
   }
@@ -19,12 +28,20 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.17;
+    line-height: calc(16 / 14);
     margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
   &__text {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: calc(24 / 14);
     color: var(--grey-color);
   }
 }
