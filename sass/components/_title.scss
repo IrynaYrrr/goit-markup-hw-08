@@ -1,0 +1,33 @@
+.blocks-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo--color-light {
+  color: var(--white-text-color);
+}
+
+.logo--color-dark {
+  color: var(--dark-text-color);
+}
+
+/*footer*/
+.soc--bg-color-trans {
+  background-color: var(--white-transparent-color);
+}
+
+.soc--color-white {
+  color: var(--white-text-color);
+}
+
+/*team*/
+.soc--bg-color-white {
+  background-color: var(--white-text-color);
+}
+
+.soc--color-grey {
+  color: var(--icon-grey-color);
+}

@@ -1,0 +1,32 @@
+.projects {
+  padding-top: 0;
+}
+
+.image-list {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+  }
+  &__label-wrap {
+    width: 370px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-transparent-color);
+    position: absolute;
+    bottom: 0px;
+  }
+  &__label-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+  }
+}

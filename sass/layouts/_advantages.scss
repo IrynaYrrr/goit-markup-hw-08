@@ -1,0 +1,30 @@
+.points-list {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-light-color);
+  }
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--grey-color);
+  }
+}

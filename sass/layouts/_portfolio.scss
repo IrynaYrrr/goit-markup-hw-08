@@ -1,0 +1,100 @@
+.select-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+
+  &__button {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Roboto', sans serif;
+    line-height: 1.6;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--background-light-color);
+    color: var(--black-color);
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: var(--blue-color);
+      color: var(--white-text-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    &:focus {
+      background-color: var(--blue-color);
+      color: var(--white-text-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    width: calc((100% - 60px) / 3);
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  &__text-top {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--bg-transparent-blue);
+    color: var(--white-text-color);
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    .gallery-list__link:hover & {
+      transform: translateY(0);
+    }
+  }
+  &__text-wrap {
+    text-align: start;
+    padding: 20px 24px;
+    background-color: var(--white-text-color);
+    border-bottom: 1px solid var(--line-color);
+    border-right: 1px solid var(--line-color);
+    border-left: 1px solid var(--line-color);
+  }
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--black-color);
+  }
+  &__type {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+  }
+}
