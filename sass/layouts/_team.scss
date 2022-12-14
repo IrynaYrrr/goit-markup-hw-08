@@ -1,9 +1,17 @@
 .team {
   background-color: var(--background-light-color);
+  text-align: center;
+}
+
+.team__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 
   &__item {
@@ -14,14 +22,20 @@
   }
 
   &__description-wrap {
-    text-align: center;
-    padding: 30px 0;
+    padding: 30px 0 24px 0;
+
+    @media screen and (min-width: 768px) {
+      padding: 30px 0 24px 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 30px 0;
+    }
   }
 
   &__worker {
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.17;
+    line-height: calc(19 / 16);
     letter-spacing: 0.03em;
     margin-bottom: 10px;
   }
