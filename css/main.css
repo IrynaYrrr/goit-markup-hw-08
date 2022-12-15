@@ -479,13 +479,37 @@ body {
   fill: var(--white-text-color);
 }
 
+.customers {
+  text-align: center;
+}
+
+.customers__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .company-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .company-list__item {
-  width: 170px;
+  width: 100%;
   height: 92px;
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .company-list__item {
+    max-width: 768px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-list__item {
+    max-width: 1200px;
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 .company-list__link {
   display: flex;
