@@ -17,7 +17,6 @@
     }
     @media screen and (min-width: 1200px) {
       display: flex;
-      align-items: baseline;
       justify-content: space-between;
       gap: 70px;
     }
@@ -31,10 +30,8 @@
     gap: 60px;
 
     @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-      display: flex;
+      flex-direction: row;
       align-items: baseline;
-      justify-content: space-between;
       gap: 70px;
     }
   }
@@ -47,11 +44,7 @@
   font-size: 24px;
   line-height: calc(28 / 24);
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
     font-size: 26px;
     line-height: calc(31 / 24);
   }
@@ -150,6 +143,10 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--white-text-color);
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 }
 
@@ -162,6 +159,11 @@
     @media screen and (min-width: 480px) {
       display: flex;
       flex-direction: column;
+      gap: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
       gap: 20px;
     }
   }
@@ -180,14 +182,12 @@
 
     @media screen and (min-width: 480px) {
       width: 450px;
-      margin-right: 0px;
     }
     @media screen and (min-width: 768px) {
-      width: 358px;
+      width: 450px;
     }
     @media screen and (min-width: 1200px) {
       width: 358px;
-      margin-right: 12px;
     }
     &:focus {
       border-color: var(--white-text-color);
