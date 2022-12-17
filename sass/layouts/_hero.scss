@@ -7,6 +7,10 @@
   padding: 118px 0;  /* padding: 200px 0; */
   max-width: 100%;  /* max-width: 1600px; */
   margin: 0 auto;
+
+  @include desktop {
+    background-image: var(--gradient), url(../../images/hero-bg.jpg);
+  }
   &__title {
     width: 100%; /* width: 696px; */
     margin: 0 auto;

@@ -3,13 +3,13 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  @media screen and (min-width: 480px) {
+  @include mobile {
     max-width: 480px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     max-width: 768px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     max-width: 1200px;
   }
 }
@@ -17,10 +17,10 @@
 .section {
   padding: 60px 0 60px 0;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding: 60px 0 60px 0;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding: 94px 0 94px 0;
   }
 }
