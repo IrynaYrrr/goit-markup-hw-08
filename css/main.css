@@ -258,7 +258,7 @@ body {
 
 .hero {
   background-color: var(--hero-bg-color);
-  background-image: var(--gradient), url(../images/hero-bg.jpg);
+  background-image: var(--gradient), url(../../images/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
