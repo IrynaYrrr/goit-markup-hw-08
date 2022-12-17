@@ -8,15 +8,22 @@
   max-width: 100%;  /* max-width: 1600px; */
   margin: 0 auto;
 
+  @include retina {
+    background-image: var(--gradient), url(../../images/hero-bg-mob-2x.jpg);
+  }
   @include mobile {
     background-image: var(--gradient), url(../../images/hero-bg-tab-1x.jpg);
+    @include retina {
+      background-image: var(--gradient), url(../../images/hero-bg-tab-2x.jpg);
+    }
   }
   @include tablet {
     background-image: var(--gradient), url(../../images/hero-bg-des-1x.jpg);
+    @include retina {
+      background-image: var(--gradient), url(../../images/hero-bg-des-2x.jpg);
+    }
   }
-  @include desktop {
-    background-image: var(--gradient), url(../../images/hero-bg-des-1x.jpg);
-  }
+
   &__title {
     width: 100%; /* width: 696px; */
     margin: 0 auto;
