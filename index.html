@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <a class="logo logo--color-dark" href="./index.html"
           ><span class="logo__web">Web</span>Studio</a
@@ -58,7 +58,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main class="main">
       <section class="section hero">
         <div class="container hero__container">
@@ -169,17 +169,18 @@
           <ul class="card-list">
             <li class="card-list__item">
               <picture>
-                <source>
-                <source>
-                <source>
+                <source srcset="./images/prod-designer-des-1x.jpg 1x, ./images/prod-designer-des-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/prod-designer-tab-1x.jpg 1x, ./images/prod-designer-tab-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/prod-designer-mob-1x.jpg 1x, ./images/prod-designer-mob-2x.jpg 2x"
+                media="(min-width: 480px)"/>
                 <img
-                srcset="./images/prod-designer-des-1x.jpg 1x, ./images/prod-designer-des-2x.jpg 2x"
-                src="./images/prod-designer-des-1x.jpg"
-                class="card-list__img"
-                width="270"
-                height="260"
-                alt="product designer"
-              />
+                  src="./images/prod-designer-mob-1x.jpg"
+                  class="card-list__img"
+                  width="450"
+                  alt="product designer"
+                />
               </picture>
               <div class="card-list__description-wrap">
                 <h3 class="card-list__worker">Ігор Дем'яненко</h3>
@@ -232,14 +233,21 @@
                 </ul>
               </div>
             </li>
-            <!-- <li class="card-list__item">
-              <img
-                class="card-list__img"
-                src="./images/developer-des-1x.jpg"
-                width="270"
-                height="260"
-                alt="frontend developer"
-              />
+            <li class="card-list__item">
+              <picture>
+                <source srcset="./images/developer-des-1x.jpg 1x, ./images/developer-des-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/developer-tab-1x.jpg 1x, ./images/developer-tab-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/developer-mob-1x.jpg 1x, ./images/developer-mob-2x.jpg 2x"
+                media="(min-width: 480px)"/>
+                <img
+                  class="card-list__img"
+                  src="./images/developer-mob-1x.jpg"
+                  width="450"
+                  alt="frontend developer"
+                />
+              </picture>
               <div class="card-list__description-wrap">
                 <h3 class="card-list__worker">Ольга Рєпіна</h3>
                 <p class="card-list__position">Frontend Developer</p>
@@ -290,15 +298,22 @@
                   </li>
                 </ul>
               </div>
-            </li> -->
-            <!-- <li class="card-list__item">
-              <img
-                class="card-list__img"
-                src="./images/marketing-des-1x.jpg"
-                width="270"
-                height="260"
-                alt="marketing"
-              />
+            </li>
+            <li class="card-list__item">
+              <picture>
+                <source srcset="./images/marketing-des-1x.jpg 1x, ./images/marketing-des-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/marketing-tab-1x.jpg 1x, ./images/marketing-tab-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/marketing-mob-1x.jpg 1x, ./images/marketing-mob-2x.jpg 2x"
+                media="(min-width: 480px)"/>
+                <img
+                  class="card-list__img"
+                  src="./images/marketing-mob-1x.jpg"
+                  width="450"
+                  alt="marketing"
+                />
+              </picture>
               <div class="card-list__description-wrap">
                 <h3 class="card-list__worker">Микола Тарасов</h3>
                 <p class="card-list__position">Marketing</p>
@@ -349,15 +364,22 @@
                   </li>
                 </ul>
               </div>
-            </li> -->
-            <!-- <li class="card-list__item">
-              <img
-                class="card-list__img"
-                src="./images/ui-designer-des-1x.jpg"
-                width="270"
-                height="260"
-                alt="ui designer"
-              />
+            </li>
+            <li class="card-list__item">
+              <picture>
+                <source srcset="./images/ui-designer-des-1x.jpg 1x, ./images/ui-designer-des-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/ui-designer-tab-1x.jpg 1x, ./images/ui-designer-tab-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/ui-designer-mob-1x.jpg 1x, ./images/ui-designer-mob-2x.jpg 2x"
+                media="(min-width: 480px)"/>
+                <img
+                  class="card-list__img"
+                  src="./images/ui-designer-mob-1x.jpg"
+                  width="450"
+                  alt="ui designer"
+                />
+              </picture>
               <div class="card-list__description-wrap">
                 <h3 class="card-list__worker">Михайло Єрмаков</h3>
                 <p class="card-list__position">UI Designer</p>
@@ -408,7 +430,7 @@
                   </li>
                 </ul>
               </div>
-            </li> -->
+            </li>
           </ul>
         </div>
       </section>
