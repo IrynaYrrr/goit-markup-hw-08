@@ -104,8 +104,8 @@ body {
 }
 
 .blocks-heading {
-  font-weight: 700;
   font-size: 28px;
+  font-weight: 700;
   line-height: 1.1785714286;
   margin-bottom: 30px;
 }
@@ -262,8 +262,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 118px 0; /* padding: 200px 0; */
-  max-width: 100%; /* max-width: 1600px; */
+  padding: 118px 0;
+  max-width: 100%;
   margin: 0 auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -291,18 +291,30 @@ body {
     background-image: var(--gradient), url(../../images/hero-bg-des-2x.jpg);
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    max-width: 1600px;
+  }
+}
 .hero__title {
-  width: 100%; /* width: 696px; */
+  width: 100%;
   margin: 0 auto;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 26px; /* font-size: 44px; */
-  line-height: 1.62; /* line-height: 1.36; */
+  font-size: 26px;
+  line-height: 1.6153846154;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 .hero__btn {
   display: flex;
@@ -311,12 +323,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.9;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
   margin: 0 auto;
-  min-width: 200px; /* min-width: 216px; */
+  min-width: 200px;
   height: 50px;
   color: var(--white-text-color);
   background-color: var(--blue-color);
@@ -326,6 +338,11 @@ body {
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--button-active-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    min-width: 216px;
+  }
 }
 
 .points-list {
@@ -391,6 +408,7 @@ body {
 @media screen and (min-width: 1200px) {
   .projects {
     display: block;
+    text-align: center;
   }
 }
 
