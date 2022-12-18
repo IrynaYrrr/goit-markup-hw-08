@@ -3,6 +3,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  // outline: 2px solid rgb(154, 214, 33) ;
   @include mobile {
     max-width: 480px;
   }
@@ -23,4 +24,12 @@
   @include desktop {
     padding: 94px 0 94px 0;
   }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
