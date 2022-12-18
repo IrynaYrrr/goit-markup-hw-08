@@ -164,18 +164,17 @@ body {
   overflow: hidden;
 }
 
-.header {
-  border-bottom: 1px solid var(--line-color);
-}
 .header__container {
-  display: flex;
+  display: none;
   align-items: center;
 }
 .header__navigation {
+  display: none;
   margin-right: auto;
 }
 
 .logo {
+  display: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -189,7 +188,7 @@ body {
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   gap: 50px;
 }
 .nav-list__item {
@@ -212,7 +211,7 @@ body {
 }
 
 .contacts-list {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 50px;
 }
