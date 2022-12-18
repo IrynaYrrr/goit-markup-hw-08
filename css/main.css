@@ -753,6 +753,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .subscribe-form__input {
+    width: 270px;
+  }
+}
 @media screen and (min-width: 480px) {
   .subscribe-form__input {
     width: 450px;

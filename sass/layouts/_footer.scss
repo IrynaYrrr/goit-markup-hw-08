@@ -151,6 +151,7 @@
 }
 
 .subscribe-form {
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -180,6 +181,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width: 479px){
+      width: 270px;
+    }
     @include mobile {
       width: 450px;
     }
