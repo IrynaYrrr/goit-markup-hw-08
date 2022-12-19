@@ -1,6 +1,6 @@
 .hero {
   background-color: var(--hero-bg-color);
-  background-image: var(--gradient), url(../../images/hero-bg-mob-1x.jpg);
+  background-image: var(--gradient), url(../images/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,18 +9,18 @@
   margin: 0 auto;
 
   @include retina {
-    background-image: var(--gradient), url(../../images/hero-bg-mob-2x.jpg);
+    background-image: var(--gradient), url(../images/hero-bg-mob-2x.jpg);
   }
   @include mobile {
-    background-image: var(--gradient), url(../../images/hero-bg-tab-1x.jpg);
+    background-image: var(--gradient), url(../images/hero-bg-tab-1x.jpg);
     @include retina {
-      background-image: var(--gradient), url(../../images/hero-bg-tab-2x.jpg);
+      background-image: var(--gradient), url(../images/hero-bg-tab-2x.jpg);
     }
   }
   @include tablet {
-    background-image: var(--gradient), url(../../images/hero-bg-des-1x.jpg);
+    background-image: var(--gradient), url(../images/hero-bg-des-1x.jpg);
     @include retina {
-      background-image: var(--gradient), url(../../images/hero-bg-des-2x.jpg);
+      background-image: var(--gradient), url(../images/hero-bg-des-2x.jpg);
     }
   }
   @include desktop {
