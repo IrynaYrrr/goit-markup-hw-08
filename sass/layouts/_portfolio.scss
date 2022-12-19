@@ -37,10 +37,17 @@
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 
   &__item {
-    width: calc((100% - 60px) / 3);
+
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      flex-basis: calc((100% - 60px) / 3);
+    }
   }
   &__link {
     display: block;
@@ -87,7 +94,7 @@
   &__name {
     font-size: 18px;
     font-weight: 700;
-    line-height: 2;
+    line-height:calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--black-color);
   }

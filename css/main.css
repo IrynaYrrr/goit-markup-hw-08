@@ -1344,10 +1344,18 @@ body {
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
-.gallery-list__item {
-  width: calc((100% - 60px) / 3);
+@media screen and (min-width: 768px) {
+  .gallery-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .gallery-list__link {
   display: block;
