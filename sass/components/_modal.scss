@@ -214,7 +214,7 @@
     }
   }
 
-  &__label-agree span {
+  &__label-agree span:first-child {
     width: 16px;
     height: 15px;
     border: 2px solid var(--black-color);
@@ -232,6 +232,10 @@
       border: none;
       fill: var(--white-text-color);
     }
+  }
+
+  &__check-text {
+    display: block;
   }
 
   &__link-condition {

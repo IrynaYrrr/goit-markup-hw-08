@@ -1257,7 +1257,7 @@ body {
     justify-content: center;
   }
 }
-.modal-form__label-agree span {
+.modal-form__label-agree span:first-child {
   width: 16px;
   height: 15px;
   border: 2px solid var(--black-color);
@@ -1271,10 +1271,13 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form__check-input:checked + .modal-form__label-agree span {
+.modal-form__check-input:checked + .modal-form__label-agree span:first-child {
   background-color: var(--blue-color);
   border: none;
   fill: var(--white-text-color);
+}
+.modal-form__check-text {
+  display: block;
 }
 .modal-form__link-condition {
   color: var(--link-condition-color);
