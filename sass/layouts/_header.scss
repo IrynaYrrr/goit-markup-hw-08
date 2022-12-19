@@ -120,22 +120,6 @@
   }
 }
 
-.current {
-  color: var(--blue-color);
-  &::after {
-    content: '';
-    color: currentColor;
-    border-style: solid;
-    display: block;
-    width: 100%;
-    border-radius: 2px;
-    height: 4px;
-    bottom: -1px;
-    left: 0;
-    position: absolute;
-  }
-}
-
 .mobile-menu {
   position: fixed;
   top: -35px;
@@ -249,5 +233,21 @@
     font-size: 18px;
     line-height: calc(22 / 18);
     letter-spacing: 0.02em;
+  }
+}
+
+.current {
+  color: var(--blue-color);
+  &::after {
+    content: '';
+    color: currentColor;
+    border-style: solid;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
+    position: absolute;
   }
 }
